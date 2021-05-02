@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/infinite-scroll-react/static/css/main.d66078de.chunk.css",
+    "main.js": "/infinite-scroll-react/static/js/main.f6f064b6.chunk.js",
+    "main.js.map": "/infinite-scroll-react/static/js/main.f6f064b6.chunk.js.map",
+    "runtime-main.js": "/infinite-scroll-react/static/js/runtime-main.f097b789.js",
+    "runtime-main.js.map": "/infinite-scroll-react/static/js/runtime-main.f097b789.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/infinite-scroll-react/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.a57a073a.chunk.js": "/infinite-scroll-react/static/js/2.a57a073a.chunk.js",
+    "static/js/2.a57a073a.chunk.js.map": "/infinite-scroll-react/static/js/2.a57a073a.chunk.js.map",
+    "static/js/3.6a8410c2.chunk.js": "/infinite-scroll-react/static/js/3.6a8410c2.chunk.js",
+    "static/js/3.6a8410c2.chunk.js.map": "/infinite-scroll-react/static/js/3.6a8410c2.chunk.js.map",
+    "index.html": "/infinite-scroll-react/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/infinite-scroll-react/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.d66078de.chunk.css.map": "/infinite-scroll-react/static/css/main.d66078de.chunk.css.map",
+    "static/js/2.a57a073a.chunk.js.LICENSE.txt": "/infinite-scroll-react/static/js/2.a57a073a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f097b789.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.a57a073a.chunk.js",
+    "static/css/main.d66078de.chunk.css",
+    "static/js/main.f6f064b6.chunk.js"
+  ]
+}
