@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Layout from "./components/Layout";
+import LoginScreen from "./components/LoginScreen";
+import AuthContext from "./Context/AuthContext";
+import {  useState } from "react";
+import {  Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import MainScreen from "./components/MainScreen";
+import PrivateRoute from "./PrivateRoute";
 
 function App() {
+  const loginVal=localStorage.getItem('login')?localStorage.getItem('login'):false;
+  const [login, setLogin] = useState(loginVal);
+  const [userName, setUsername] = useState("");
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AuthContext.Provider value={{ setLogin, setUsername,userName,login}}>
+      <Router>
+        <Layout>
+            <Switch>
+              <Route exact path="/login" component={LoginScreen}/>
+              <PrivateRoute exact path="/home" component={MainScreen} login={login}/>
+              <PrivateRoute path='/' component={MainScreen} login={login}/>
+            </Switch>
+        </Layout>
+        </Router>
+      </AuthContext.Provider>
     </div>
   );
 }
